@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p><u><b>Use the interactive charts below to explore the dataset</b></u></p>
+      </div>
+    </div>
+    <div class="row row-no-gutters">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <div class="col-md-8">
+          <div class="container">
+            <div class="row">
+          <h3><b>About This Project</b></h3>
+          <p></p>
+              Artifical meat has been synthesized all over the country and the world through algea, fungi, and micro organisms found on plant roots. But what about the bacteria found on the human body?
+              This project is that next step in that venture. The human body is home to thousands of different types of bacteria, and one of them could be the key to synthesizing the most delicious burger you've ever had.
+              However, with so many types of bacteria all over the human body, where do we start? We decided the belly button. This project looks at the bacteria present in the belly buttons of over a hundred volunteers
+              in hopes of discovering a bacteria to aid in that goal.
+              <p></p>
+             Here we have visualizations of the results from the volunteers. We have the 10 ten bacteria cultures found in each volunteer, a representation of all the bacteria cultures found for each volunteer, 
+             and a guage informing how often the volunteer washes their belly button per week if the information was provided.
+             <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/chart.js"></script>
+
+</body>
+
+</html>

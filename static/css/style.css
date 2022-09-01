@@ -1,0 +1,11 @@
+body {
+
+    color: #0c0c0c;
+    background-color: #dbdbdbc4;
+  }
+  .jumbotron{
+    background-image: url("../../image/microscopic_organisms_background.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    font-family: "Monaco";
+  }
